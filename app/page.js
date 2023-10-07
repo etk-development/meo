@@ -38,6 +38,8 @@ const App = () => {
                 &#9733;
               </span>
             ))}
+            <p>Rating: {rating} stars</p>
+            <button onClick={() => setVisible(!visible)}>回答する</button>
           </>
         : <>
             {[1, 2, 3, 4, 5].map((star) => (
@@ -52,46 +54,11 @@ const App = () => {
                 &#9733;
               </span>
             ))}
+            {highRating
+              ?<div><Thanks/></div>
+              :<div>ご協力ありがとうございました。</div>
+            }
           </>
-      }
-
-      {/* {[1, 2, 3, 4, 5].map((star) => (
-        <span
-          key={star}
-          style={{
-            cursor: 'pointer',
-            color: star <= rating ? 'gold' : 'gray',
-            ...(halfRating && { color: 'silver' }),
-          }}
-        >
-          &#9733;
-        </span>
-      ))} */}
-
-
-      {/* {[1, 2, 3, 4, 5].map((star) => (
-        <span
-          key={star}
-          onClick={() => handleClick(star)}
-          style={{
-            cursor: 'pointer',
-            color: star <= rating ? 'gold' : 'gray',
-            ...(halfRating && { color: 'silver' }),
-          }}
-        >
-          &#9733;
-        </span>
-      ))} */}
-
-      {visible
-        ? <>
-            <p>Rating: {rating} stars</p>
-            <button onClick={() => setVisible(!visible)}>回答する</button>
-          </>
-        : (highRating
-          ?<div><Thanks/></div>
-          :<div>ご協力ありがとうございました。</div>
-          )
       }
     </div>
   );
