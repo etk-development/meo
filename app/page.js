@@ -38,7 +38,7 @@ const App = () => {
                 &#9733;
               </span>
             ))}
-            <p>Rating: {rating} stars</p>
+            {/* <p>Rating: {rating} stars</p> */}
             <button onClick={() => setVisible(!visible)}>回答する</button>
           </>
         : <>
