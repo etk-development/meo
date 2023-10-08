@@ -23,7 +23,7 @@ const App = () => {
   return (
     <div>
       {visible
-        ? <>
+        ? <div>
             <p>本クリニックのサービスの満足度について５段階評価でご協力お願いします。</p>
             {[1, 2, 3, 4, 5].map((star) => (
               <span
@@ -40,8 +40,8 @@ const App = () => {
             ))}
             {/* <p>Rating: {rating} stars</p> */}
             <button onClick={() => setVisible(!visible)}>回答する</button>
-          </>
-        : <>
+          </div>
+        : <div>
             {[1, 2, 3, 4, 5].map((star) => (
               <span
                 key={star}
@@ -58,7 +58,7 @@ const App = () => {
               ?<div><Thanks/></div>
               :<div>ご協力ありがとうございました。</div>
             }
-          </>
+          </div>
       }
     </div>
   );
