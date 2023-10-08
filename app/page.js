@@ -24,20 +24,22 @@ const App = () => {
     <div>
       {visible
         ? <div>
-            <p>本クリニックのサービスの満足度について５段階評価でご協力お願いします。</p>
-            {[1, 2, 3, 4, 5].map((star) => (
-              <span
-                key={star}
-                onClick={() => handleClick(star)}
-                style={{
-                  cursor: 'pointer',
-                  color: star <= rating ? 'gold' : 'gray',
-                  ...(halfRating && { color: 'silver' }),
-                }}
-              >
-                &#9733;
-              </span>
-            ))}
+            <div>
+              <p>本クリニックのサービスの満足度について５段階評価でご協力お願いします。</p>
+              {[1, 2, 3, 4, 5].map((star) => (
+                <span
+                  key={star}
+                  onClick={() => handleClick(star)}
+                  style={{
+                    cursor: 'pointer',
+                    color: star <= rating ? 'gold' : 'gray',
+                    ...(halfRating && { color: 'silver' }),
+                  }}
+                >
+                  &#9733;
+                </span>
+              ))}
+            </div>
             {/* <p>Rating: {rating} stars</p> */}
             <button onClick={() => setVisible(!visible)}>回答する</button>
           </div>
