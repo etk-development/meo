@@ -13,14 +13,21 @@ const App = () => {
     <div className={styles.main}>
       <form method="post" action={url}>
         <div>
-          {data.map(d =><>
-            <div><h2 key={d.title}>{d.title}</h2><p>必須</p></div>
-            <p><label htmlFor={d.id5}>{d.rank5}<input type="radio" id={d.id5} name={d.name} value={d.rank5} required/> </label></p>
-            <p><label htmlFor={d.id4}>{d.rank4}<input type="radio" id={d.id4} name={d.name} value={d.rank4} required/> </label></p>
-            <p><label htmlFor={d.id3}>{d.rank3}<input type="radio" id={d.id3} name={d.name} value={d.rank3} required/> </label></p>
-            <p><label htmlFor={d.id2}>{d.rank2}<input type="radio" id={d.id2} name={d.name} value={d.rank2} required/> </label></p>
-            <p><label htmlFor={d.id1}>{d.rank1}<input type="radio" id={d.id1} name={d.name} value={d.rank1} required/> </label></p>
-          </>
+          {data.map(d =>
+          <div key={d.title}>
+            <div key={d.title}>
+              <h2>{d.title}</h2>
+              <p>必須</p>
+            </div>
+            {Object.entries(d.ranks).map(([key, value]) => (
+              <p key={key}>
+                <label htmlFor={d.title+key}>
+                  <input type="radio" id={d.title+key} name={d.name} value={key} required/>
+                    {value}
+                </label>
+              </p>
+            ))}
+          </div>
           )}
         </div>
         <button id="submit-button" type="submit" >送信</button>
