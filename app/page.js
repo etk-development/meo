@@ -40,30 +40,30 @@ const App = () => {
 
   return (
     <div className={styles.main}>
-    {thanks
-      ? <>
-        <Thanks />
-      </>
-      : <>
-          {completeSubmit 
-            ? <>
-                {check 
-                  ? <Togoogle comment={comment}/>
-                  : <Check 
-                    handleCheckChange={handleCheckChange}
-                    handleThanksChange={handleThanksChange}
-                  />
-                }
-              </>
-            : <Survey
-              handleLastChange={handleLastChange}
-              handleSubmitChange={handleSubmitChange}
-              handleCommentChange={handleCommentChange}
-              handleThanksChange={handleThanksChange}
-            />
-          }
+      {thanks
+        ? <>
+          <Thanks />
         </>
-    }
+        : <>
+            {completeSubmit 
+              ? <>
+                  {check 
+                    ? <Togoogle comment={comment}/>
+                    : <Check 
+                      handleCheckChange={handleCheckChange}
+                      handleThanksChange={handleThanksChange}
+                    />
+                  }
+                </>
+              : <Survey
+                handleLastChange={handleLastChange}
+                handleSubmitChange={handleSubmitChange}
+                handleCommentChange={handleCommentChange}
+                handleThanksChange={handleThanksChange}
+              />
+            }
+          </>
+      }
     </div>
   );
 };
