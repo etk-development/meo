@@ -63,17 +63,22 @@
   color: #ffffff;
 }
 
+.choiceLabel:has(input:checked) {
+  background-color: #73d8ff;
+  color: #ffffff;
+  border: none;
+}
+
 .section label {
   font-size: 18px;
-  /* margin-right: 15px;
-  padding: 3px 0px; */
   display: block;
   line-height: 1.5em;
 }
 
-/* .choiceLabel input {
+.choiceLabel input {
   display: none;
-} */
+}
+
 .input_text_title {
   width: 80%;
   color: #73d8ff;

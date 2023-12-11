@@ -28,6 +28,17 @@
   color: #ffffff;
 }
 
+.Ybutton:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+  color: #73d8ff;
+}
+
+.Ybutton:active {
+  box-shadow: none;
+  transform: translateY(2px);
+}
+
 .Nbutton {
   color: #ffffff;
   border: none;
@@ -36,7 +47,18 @@
   margin: 8px auto;
   padding: 16px;
   border-radius: 56px;
-  background-color: rgb(80, 80, 80);
+  background-color: rgb(150, 150, 150);
+}
+
+.Nbutton:hover {
+  background-color: rgb(67, 67, 67);
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.Nbutton:active {
+  box-shadow: none;
+  transform: translateY(2px);
 }
 
 .title {

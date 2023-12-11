@@ -125,3 +125,13 @@
   padding: 8px;
   color: #ffffff;
 }
+
+.button:hover {
+  background-color: #707070;
+  cursor: pointer;
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translateY(2px);
+}
