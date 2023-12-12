@@ -2,13 +2,10 @@
 import React, { useState } from 'react';
 import styles from './page.module.css';
 
-
 import Survey from './survey/pages';
 import Thanks from './thanks/page';
 import Check from './check/pages';
 import Togoogle from './togoogle/pages';
-
-
 
 const App = () => {
 
@@ -31,12 +28,9 @@ const App = () => {
   const handleCheckChange = (newValue) => {
     setCheck(newValue);
   };
-
   const handleThanksChange = (newValue) => {
     setThanks(newValue);
   };
-
-
 
   return (
     <div className={styles.main}>
@@ -49,18 +43,10 @@ const App = () => {
               ? <>
                   {check 
                     ? <Togoogle comment={comment}/>
-                    : <Check 
-                      handleCheckChange={handleCheckChange}
-                      handleThanksChange={handleThanksChange}
-                    />
+                    : <Check handleCheckChange={handleCheckChange} handleThanksChange={handleThanksChange} />
                   }
                 </>
-              : <Survey
-                handleLastChange={handleLastChange}
-                handleSubmitChange={handleSubmitChange}
-                handleCommentChange={handleCommentChange}
-                handleThanksChange={handleThanksChange}
-              />
+              : <Survey handleLastChange={handleLastChange} handleSubmitChange={handleSubmitChange} handleCommentChange={handleCommentChange} handleThanksChange={handleThanksChange}/>
             }
           </>
       }

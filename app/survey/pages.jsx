@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import styles from "./survey.module.css"
 import data from "../qa.json" assert { type: "json" };
+
 import Image from "next/image";
 import topimage from "../../public/top_img.jpg";
 
+
+const url = "https://script.google.com/macros/s/AKfycbyU_SP1T3xg7scYD-TCp1PMB0Gd5AVSZr-K58smQbhNM7opTRmnWkWVhcVcDzPZ2grJEA/exec"
+
+
 const Survey =(props)=> {
 
-    const [formData, setFormData] = useState(null);
     const handleInputChange = (event) => {
         const value = event.target.value;
         props.handleLastChange(value);
@@ -15,9 +19,6 @@ const Survey =(props)=> {
         const value = event.target.value;
         props.handleCommentChange(value);
     };
-    const url = "https://script.google.com/macros/s/AKfycbyU_SP1T3xg7scYD-TCp1PMB0Gd5AVSZr-K58smQbhNM7opTRmnWkWVhcVcDzPZ2grJEA/exec"
-
-
 
     async function handleSubmit (event) {
         event.preventDefault()
@@ -78,11 +79,31 @@ const Survey =(props)=> {
                         <p className={styles.required}>必須</p>
                     </div>
                     <div  className={styles.section_answer}>
-                        <div ><label className={styles.choiceLabel} htmlFor="all5"><input type="radio" id="all5"  name="last" value= "5" required onChange={handleInputChange}/>大変満足 </label></div>
-                        <div ><label className={styles.choiceLabel} htmlFor="all4"><input type="radio" id="all4"  name="last" value= "4" required onChange={handleInputChange}/>満足 </label></div>
-                        <div ><label className={styles.choiceLabel} htmlFor="all3"><input type="radio" id="all3"  name="last" value= "3" required onChange={handleInputChange}/>普通 </label></div>
-                        <div ><label className={styles.choiceLabel} htmlFor="all2"><input type="radio" id="all2"  name="last" value= "2" required onChange={handleInputChange}/>不満 </label></div>
-                        <div ><label className={styles.choiceLabel} htmlFor="all1"><input type="radio" id="all1"  name="last" value= "1" required onChange={handleInputChange}/>大変不満 </label></div>
+                        <div >
+                            <label className={styles.choiceLabel} htmlFor="all5">
+                                <input type="radio" id="all5"  name="last" value= "5" required onChange={handleInputChange}/>大変満足 
+                            </label>
+                        </div>
+                        <div >
+                            <label className={styles.choiceLabel} htmlFor="all4">
+                                <input type="radio" id="all4"  name="last" value= "4" required onChange={handleInputChange}/>満足 
+                            </label>
+                        </div>
+                        <div >
+                            <label className={styles.choiceLabel} htmlFor="all3">
+                                <input type="radio" id="all3"  name="last" value= "3" required onChange={handleInputChange}/>普通 
+                            </label>
+                        </div>
+                        <div >
+                            <label className={styles.choiceLabel} htmlFor="all2">
+                                <input type="radio" id="all2"  name="last" value= "2" required onChange={handleInputChange}/>不満 
+                            </label>
+                        </div>
+                        <div >
+                            <label className={styles.choiceLabel} htmlFor="all1">
+                                <input type="radio" id="all1"  name="last" value= "1" required onChange={handleInputChange}/>大変不満 
+                            </label>
+                        </div>
                     </div>
                 </div>
                 <div  className={styles.area_section}>

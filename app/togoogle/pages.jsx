@@ -1,5 +1,6 @@
 import styles from "./togoogle.module.css"
 import Image from "next/image";
+
 import experience from "../../public/experience.svg";
 import paste from "../../public/paste.svg";
 import paste_comp from "../../public/paste_comp.svg";
@@ -11,11 +12,13 @@ import contact from "../../public/contact.svg";
 
 
 const Togoogle =(props)=> {
+
     const copyToClipboard=()=>{
         const copyTarget = props.comment;
         console.log(props.comment)
         navigator.clipboard.writeText(copyTarget)
     }
+
     return <div className={styles.container}>
                 <div className={styles.title}>
                     <h1 >アンケート</h1>
@@ -65,7 +68,7 @@ const Togoogle =(props)=> {
                         <h1 className={styles.header}>入力欄を長押しして「ペースト」が表示されたらタップ</h1>
                     </div>
                     <div>
-                        <Image src={paste} alt="experience" className={styles.itemimage} />
+                        <Image src={paste} alt="paste" className={styles.itemimage} />
                     </div>
                 </div>
 
@@ -74,7 +77,7 @@ const Togoogle =(props)=> {
                         <h1 className={styles.header}>テキストがペーストされたら「完了」をタップ</h1>
                     </div>
                     <div>
-                        <Image src={paste_comp} alt="experience" className={styles.itemimage} />
+                        <Image src={paste_comp} alt="paste_comp" className={styles.itemimage} />
                     </div>
                 </div>
 
@@ -83,7 +86,7 @@ const Togoogle =(props)=> {
                         <h1 className={styles.header}>★（星）をタップ</h1>
                     </div>
                     <div>
-                        <Image src={star} alt="experience" className={styles.itemimage} />
+                        <Image src={star} alt="star" className={styles.itemimage} />
                     </div>
                 </div>
 
@@ -92,7 +95,7 @@ const Togoogle =(props)=> {
                         <h1 className={styles.header}>画面下にある「投稿」をタップしたら完了です</h1>
                     </div>
                     <div>
-                        <Image src={post} alt="experience" className={styles.itemimage} />
+                        <Image src={post} alt="post" className={styles.itemimage} />
                     </div>
                 </div>
 
