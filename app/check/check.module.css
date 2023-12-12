@@ -73,3 +73,9 @@
   margin: 16px auto;
   display: block;
 }
+
+.image {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}

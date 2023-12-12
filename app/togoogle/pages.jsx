@@ -1,4 +1,14 @@
-import styles from "./tiogoogle.module.css"
+import styles from "./togoogle.module.css"
+import Image from "next/image";
+import experience from "../../public/experience.svg";
+import paste from "../../public/paste.svg";
+import paste_comp from "../../public/paste_comp.svg";
+import post from "../../public/post.svg";
+import star from "../../public/star.svg";
+import explain from "../../public/explain.svg";
+import iphone from "../../public/iphone.svg";
+import contact from "../../public/contact.svg";
+
 
 const Togoogle =(props)=> {
     const copyToClipboard=()=>{
@@ -14,9 +24,12 @@ const Togoogle =(props)=> {
                 </div>
 
                 <div className={styles.message}>
-                    <p >よろしければ</p>
-                    <p >Googleの口コミへの投稿にも</p>
-                    <p >ご協力お願いします！</p>
+                    <Image src={explain} alt="explain" className={styles.image} />
+                    <div>
+                        <p >よろしければ</p>
+                        <p >Googleの口コミへの投稿にも</p>
+                        <p >ご協力お願いします！</p>
+                    </div>
                 </div>
 
                 <div className={styles.card}>
@@ -31,8 +44,11 @@ const Togoogle =(props)=> {
                 </div>
 
                 <div className={styles.message}>
-                    <h1>Googleアカウントページに</h1>
-                    <h1>進んだ後のステップです。</h1>
+                    <div>
+                        <h1>Googleアカウントページに</h1>
+                        <h1>進んだ後のステップです。</h1>
+                    </div>
+                    <Image src={iphone} alt="iphone" className={styles.image} />
                 </div>
 
                 <div className={styles.item}>
@@ -40,7 +56,7 @@ const Togoogle =(props)=> {
                         <h1 className={styles.header}>「この場所での自分の体験や感想を共有しましょう」部分をタップ</h1>
                     </div>
                     <div>
-                        <h1 className={styles.contents}>*画像が入ります*</h1>
+                        <Image src={experience} alt="experience" className={styles.itemimage} />
                     </div>
                 </div>
 
@@ -49,7 +65,7 @@ const Togoogle =(props)=> {
                         <h1 className={styles.header}>入力欄を長押しして「ペースト」が表示されたらタップ</h1>
                     </div>
                     <div>
-                        <h1 className={styles.contents}>*画像が入ります*</h1>
+                        <Image src={paste} alt="experience" className={styles.itemimage} />
                     </div>
                 </div>
 
@@ -58,7 +74,7 @@ const Togoogle =(props)=> {
                         <h1 className={styles.header}>テキストがペーストされたら「完了」をタップ</h1>
                     </div>
                     <div>
-                        <h1 className={styles.contents}>*画像が入ります*</h1>
+                        <Image src={paste_comp} alt="experience" className={styles.itemimage} />
                     </div>
                 </div>
 
@@ -67,31 +83,25 @@ const Togoogle =(props)=> {
                         <h1 className={styles.header}>★（星）をタップ</h1>
                     </div>
                     <div>
-                        <h1 className={styles.contents}>*画像が入ります*</h1>
+                        <Image src={star} alt="experience" className={styles.itemimage} />
                     </div>
                 </div>
 
                 <div className={styles.item}>
                     <div>
-                        <h1 className={styles.header}>選択肢があれば、ご感想に一番近しいタグを選んでタップ</h1>
+                        <h1 className={styles.header}>画面下にある「投稿」をタップしたら完了です</h1>
                     </div>
                     <div>
-                        <h1 className={styles.contents}>*画像が入ります*</h1>
-                    </div>
-                </div>
-
-                <div className={styles.item}>
-                    <div>
-                        <h1 className={styles.header}>画面、右上にある「投稿」をタップしたら完了です</h1>
-                    </div>
-                    <div>
-                        <h1 className={styles.contents}>*画像が入ります*</h1>
+                        <Image src={post} alt="experience" className={styles.itemimage} />
                     </div>
                 </div>
 
                 <div className={styles.message}>
-                    <h1>さっそく</h1>
-                    <h1>GoogleページへGO!</h1>
+                    <Image src={contact} alt="contact" className={styles.image} />
+                    <div>
+                        <h1>さっそく</h1>
+                        <h1>GoogleページへGO!</h1>
+                    </div>
                 </div>
 
                 <div className={styles.card}>

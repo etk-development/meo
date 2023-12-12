@@ -21,7 +21,8 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
-  height: 151px;
+  height: 50px;
+  margin-top: 70px;
   /* border: 2px solid #ffffff; */
 }
 
@@ -37,7 +38,7 @@
   display: flex;
   flex-direction: column;
   padding: 0px;
-  height: 151px;
+  height: auto;
   border-radius: 20px;
   background-color: #ffffff;
   margin-bottom: 5px;
@@ -91,11 +92,11 @@
 .message {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  height: 200px;
+  max-height: 200px;
   /* border: 2px solid #ffffff; */
 }
 
@@ -134,4 +135,18 @@
 .button:active {
   box-shadow: none;
   transform: translateY(2px);
+}
+
+.itemimage {
+  width: 60%;
+  min-width: 240px;
+  max-height: 380px;
+  object-fit: contain;
+}
+
+.image {
+  width: 30%;
+  margin-right: 20px;
+  max-height: 380px;
+  object-fit: contain;
 }

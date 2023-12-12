@@ -1,4 +1,6 @@
 import styles from "./thanks.module.css"
+import Image from "next/image";
+import thanks from "../../public/thanks.svg";
 
 const Thanks =()=> {
     return <div className={styles.container}>
@@ -6,6 +8,7 @@ const Thanks =()=> {
                     <h1 >アンケート</h1>
                     <h1 >ありがとうございました。</h1>
                 </div>
+                <Image src={thanks} alt="top" className={styles.image} />
                 <div className={styles.message}>
                     <h1>今後の運用に活用させていただきます。</h1>
                 </div>
