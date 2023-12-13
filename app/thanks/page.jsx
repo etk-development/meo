@@ -1,6 +1,6 @@
 import styles from "./thanks.module.css"
 import Image from "next/image";
-import thanks from "../../public/thanks.svg";
+import thanks from "../../public/thanks/thanks.svg";
 
 const Thanks =()=> {
 

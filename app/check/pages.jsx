@@ -1,7 +1,7 @@
 import styles from "./check.module.css"
 import Image from "next/image";
-import have from "../../public/have.svg";
-import nohave from "../../public/nohave.svg";
+import have from "../../public/check/have.svg";
+import nohave from "../../public/check/nohave.svg";
 
 
 const Check =(props)=> {

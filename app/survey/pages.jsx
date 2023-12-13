@@ -3,7 +3,7 @@ import styles from "./survey.module.css"
 import data from "../qa.json" assert { type: "json" };
 
 import Image from "next/image";
-import topimage from "../../public/top_img.jpg";
+import topimage from "../../public/survey/top_img.jpg";
 
 
 const url = "https://script.google.com/macros/s/AKfycbyU_SP1T3xg7scYD-TCp1PMB0Gd5AVSZr-K58smQbhNM7opTRmnWkWVhcVcDzPZ2grJEA/exec"

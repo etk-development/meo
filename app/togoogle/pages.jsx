@@ -1,14 +1,14 @@
 import styles from "./togoogle.module.css"
 import Image from "next/image";
 
-import experience from "../../public/experience.svg";
-import paste from "../../public/paste.svg";
-import paste_comp from "../../public/paste_comp.svg";
-import post from "../../public/post.svg";
-import star from "../../public/star.svg";
-import explain from "../../public/explain.svg";
-import iphone from "../../public/iphone.svg";
-import contact from "../../public/contact.svg";
+import experience from "../../public/togoogle/experience.svg";
+import paste from "../../public/togoogle/paste.svg";
+import paste_comp from "../../public/togoogle/paste_comp.svg";
+import post from "../../public/togoogle/post.svg";
+import star from "../../public/togoogle/star.svg";
+import explain from "../../public/togoogle/explain.svg";
+import iphone from "../../public/togoogle/iphone.svg";
+import contact from "../../public/togoogle/contact.svg";
 
 
 const Togoogle =(props)=> {
