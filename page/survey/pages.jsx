@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import styles from "./survey.module.css"
-import data from "../qa.json" assert { type: "json" };
+import data from "app/qa.json" assert { type: "json" };
 
 import Image from "next/image";
 import topimage from "../../public/survey/top_img.jpg";
 
 
-const url = "https://script.google.com/macros/s/AKfycbyU_SP1T3xg7scYD-TCp1PMB0Gd5AVSZr-K58smQbhNM7opTRmnWkWVhcVcDzPZ2grJEA/exec"
+const url = "https://script.google.com/macros/s/AKfycbz4hG-yELw4NB6MKiLEVlJGo-m9V5WeVMe3yZ_ao_OgBFdlBYpb5kqhUQCJqJaYur70gA/exec"
 
 
 const Survey =(props)=> {
@@ -26,6 +26,7 @@ const Survey =(props)=> {
         const formData = new FormData(event.target);
         const data = JSON.stringify(Object.fromEntries(formData))
         let dataObject = JSON.parse(data);
+        console.log(data)
         // 非同期処理を実行する
         await fetch(url, {
             method: "POST",
@@ -63,7 +64,7 @@ const Survey =(props)=> {
                                             type="radio" 
                                             id={d.title+key} 
                                             name={d.name} 
-                                            value={key} 
+                                            value={value} 
                                             required
                                         />
                                             {value}

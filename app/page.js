@@ -2,10 +2,10 @@
 import React, { useState } from 'react';
 import styles from './page.module.css';
 
-import Survey from './survey/pages';
-import Thanks from './thanks/page';
-import Check from './check/pages';
-import Togoogle from './togoogle/pages';
+import Survey from '../page/survey/pages';
+import Thanks from '../page/thanks/page';
+import Check from '../page/check/pages';
+import Togoogle from '../page/togoogle/pages';
 
 const App = () => {
 
