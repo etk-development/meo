@@ -6,7 +6,7 @@ import Image from "next/image";
 import topimage from "../../public/survey/top_img.jpg";
 
 
-const url = "https://script.google.com/macros/s/AKfycbzDsm4i7_7MsHM2CVw_Nzg8LrslpSoe9wVO0OQ9FD7ffoHZ8uPsCg5Vdr3kipUDSBYJJw/exec"
+const url = "https://script.google.com/macros/s/AKfycbyg8tttTLbECBiXc0ZPdUN1MZ7oT3qupe1kZ5_HWUE_4mI7DBH3OZNPksPsC12CmoJf6A/exec"
 
 
 const Survey =(props)=> {
