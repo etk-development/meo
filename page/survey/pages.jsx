@@ -6,7 +6,7 @@ import Image from "next/image";
 import topimage from "../../public/survey/top_img.jpg";
 
 
-const url = "https://script.google.com/macros/s/AKfycbyg8tttTLbECBiXc0ZPdUN1MZ7oT3qupe1kZ5_HWUE_4mI7DBH3OZNPksPsC12CmoJf6A/exec"
+const url = "https://script.google.com/macros/s/AKfycbyLResUj4U8g2h0hcOlKAZLEZfU_n-_b3U0SZzCfa07-VEgz2HAWUNHDMC40iw1PwtbjA/exec"
           // https://script.google.com/macros/s/AKfycbyg8tttTLbECBiXc0ZPdUN1MZ7oT3qupe1kZ5_HWUE_4mI7DBH3OZNPksPsC12CmoJf6A/exec
 
 
