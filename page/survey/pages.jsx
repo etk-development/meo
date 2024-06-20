@@ -7,6 +7,7 @@ import topimage from "../../public/survey/top_img.jpg";
 
 
 const url = "https://script.google.com/macros/s/AKfycbyg8tttTLbECBiXc0ZPdUN1MZ7oT3qupe1kZ5_HWUE_4mI7DBH3OZNPksPsC12CmoJf6A/exec"
+          // https://script.google.com/macros/s/AKfycbyg8tttTLbECBiXc0ZPdUN1MZ7oT3qupe1kZ5_HWUE_4mI7DBH3OZNPksPsC12CmoJf6A/exec
 
 
 const Survey =(props)=> {
